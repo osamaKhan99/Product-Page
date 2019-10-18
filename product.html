@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<link href="https://fonts.google.com/?selection.family=Anton">
+<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+<html>
+    <style>
+        #header{
+            position: fixed;
+            top: 0px;
+            
+           align-items: right;
+           display: flex;
+           padding: 0px,20px;
+        }
+        #header-img{
+            width: 120px;
+           
+        }
+        #nav-bar{
+            vertical-align: top;
+            text-align: right;
+        }
+        .nav-link{
+            vertical-align: top;
+            text-align: right;
+        }
+        ul{
+            position: fixed;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            text-align: left;
+            vertical-align: top;
+            background-color:rgb(231, 183, 50);
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            overflow:auto;
+        }
+        #nav-bar a {
+            float: left;
+            padding: 14px 100px;
+            display:table-row-group;
+            text-align: right;
+            flex-wrap: wrap;
+        }
+        #video{
+          padding-right: -20px;
+          margin: 150px;
+          display: inline-block;
+        }
+        #container{
+            margin: 0 auto;
+            max-width: 1000px;
+            width: 100%;
+            
+        }
+        .grid{
+           margin-top: 130px;
+           flex-direction: column;
+           justify-content: center;
+        }
+        #product{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 50%;
+            text-align: center;
+            width: 33%;
+            margin: 10px;
+            border: 1,solid,#000;
+            border-radius: 4px;
+            background: linear-gradient(35deg,orange,purple)
+            
+        }
+        .level {
+            background-color: rgb(231, 183, 50);
+            color: black;
+            padding: 10px 0;
+            width: 100%;
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+        .button {
+              padding: 10px;
+              margin: 10px;
+              background-color: rgb(231, 183, 50);
+              color: black;
+              border-radius: 10%;
+              border-color: rgb(231, 183, 50);
+              width: 90px;
+              text-transform: uppercase;
+        }
+        #acoustic {
+            
+            width: 100%;
+            height: 100%;
+        }
+        #electric {
+            
+            width: 100%;
+            height: 100%;
+        }
+        #flamenco {
+            
+            width: 100%;
+            height: 100%;
+        }
+        #price{
+            display: flex;
+            flex-direction: row;
+            
+        }
+        #form{
+            text-align: center;
+            margin: 10px;
+        }
+        #footer{
+            text-align: center;
+            background-color: rgb(231, 183, 50);
+            color: black;
+        }
+        a{
+            color: black;
+            text-decoration: none;
+        }
+        body{
+            background: linear-gradient(135deg,rgb(27, 26, 26),rgb(97, 95, 95),rgb(27, 26, 26));
+            font-family: 'Raleway',Arial, Helvetica, sans-serif
+        }
+        #headFont{
+            font-family: 'Anton', Arial, Helvetica, sans-serif;
+            color: rgb(255, 155, 41);
+            
+        }
+        #para{
+            color:  rgb(255, 155, 41);
+        }
+        ol{
+            list-style: none;
+            text-align: justify;
+        }
+        @media(max-width: 800px){
+            #price{
+                display: flex;
+            flex-direction: column;
+            }
+            #product {
+             max-width: 300px;
+             width: 100%;
+             margin: 0 auto;
+             margin-bottom: 10px;
+            }
+        }
+    </style>
+    <body>
+    <div>
+    <header id="header">
+            <img id="header-img" src="guitar.jpg" alt="Company logo">
+          <nav id="nav-bar">
+              <ul style="list-style: none">
+                  <li style="float: left"><a class="nav-link" href="#feature">Features</a></li>
+                  <li style="float: left"> <a class="nav-link" href="#work">How it works</a></li>
+                  <li style="float: left"><a class="nav-link" href="#price">Price</a></li>
+              </ul>  
+          </nav>
+    </header>
+</div>
+<div id="container">
+    <section id="feature">
+    <div class="grid">
+      <h2 id="headFont">Perimuim Material</h2>
+      <p id="para"> Our guitars use the finest wood which is sourced locally.This
+            will increase the longevity of your purchase.</p>
+    </div>
+        <div class="grid">
+            <h2 id="headFont">Fast Shipping</h2>
+            <p id="para">We make sure you recieve your guitar as soon as we have finished
+                    making it. We also provide free returns if<br> you are not satisfied.</p>
+        </div>
+        <div class="grid">
+                <h2 id="headFont">Quality Assurance</h2>
+                <p id="para">For every purchase you make, we will ensure there are no damages or
+                     faults and we will check and test the pitch of<br> your instrument.</p>
+             </div>
+    </section>
+<section id="work">
+        <div >
+                <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/O_5LT1s3gsA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+</section>
+<section id="price">
+    <div id="product">
+      <div  id="acoustic">
+     <div class="level">Acoustic Guitar</div>
+     <h2>$500</h2>
+     <ol style="list-style: none">
+        <li>Distinctive tonal personality shape</li>
+        <li>Made with High Quality Wood</li>
+        <li>12-strings, 12-fret, nylon, baritone</li>
+     </ol>
+     <button class="button">Select</button>
+     </div>
+    </div>
+    <div id="product">
+     <div id="electric">
+        <div class="level">Electric Guitar</div>
+        <h2>$700</h2>
+        <ol style="list-style: none">
+            <li>Solid Body</li>
+            <li>Hollow body and Electric acoustic</li>
+            <li>strings, bridge andneck variants</li>
+        </ol>
+        <button class="button">Select</button>
+      </div>
+    </div>
+      <div id="product">
+     <div id="flamenco">
+            <div class="level">Flamenco Guitar</div>
+            <h2>$900</h2>
+            <ol style="list-style: none">
+                <li>Distinctive tonal personality shape</li>
+                <li>Made with High Quality Wood</li>
+                <li>Thinner top and less internal bracing</li>
+            </ol>
+            <button class="button">SELECT</button>
+        </div>
+    </div>
+</section>
+</div>
+
+<div>
+    <form id="form" action="https://www.freecodecamp.com/email-submit">
+        <h3 style="color: rgb(255, 155, 41);">If you have any queries submit your email, our representer will contact you</h3>
+        <input id="email" type="email" placeholder="Enter your email" required>
+        <input id="submit" type="submit">
+    </form>
+</div>
+<footer id="footer">
+    Copyright 2019 Guitar Store all rights reserved
+</footer>
+</body>
+</html>
